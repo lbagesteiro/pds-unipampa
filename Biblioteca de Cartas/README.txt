@@ -1,6 +1,7 @@
 "AplicacaoCartas" apresenta uma biblioteca de manipulação de um baralho composto por 52 cartas.
 
 A bibliteca disponibiliza as seguintes funcionalidades ao usuário:
+
 - visualizar o baralho completo;
 - embaralhar as cartas;
 - cortar o baralho em 2, em um local definido pelo usuário;
