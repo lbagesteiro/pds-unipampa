@@ -1,15 +1,15 @@
 /**
  * Copyright (c) 2012 Luiza Bagesteiro e Ricardo Pasqualotti
  * 
- * Este arquivo é parte do programa AplicacaoCartas
+ * Este arquivo e parte do programa AplicacaoCartas
  * 
- * AplicacaoCartas é um software livre; você pode redistribui-lo e/ou modifica-lo dentro dos termos da Licença Pública Geral Menor GNU 
- * como publicada pela Fundação do Software Livre (FSF); na versão 2 da Licença, ou (na sua opnião) qualquer versão.
+ * AplicacaoCartas e um software livre; voce pode redistribui-lo e/ou modifica-lo dentro dos termos da Licenca Publica Geral Menor GNU 
+ * como publicada pela Fundacao do Software Livre (FSF); na versao 2 da Licenca, ou (na sua opiniao) qualquer versao.
  * 
- *  Este programa é distribuido na esperança que possa ser  util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- *  MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral Menor GNU para maiores detalhes.
+ *  Este programa e distribuido na esperanca que possa ser util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUACAO a qualquer
+ *  MERCADO ou APLICACAO EM PARTICULAR. Veja a Licenca Publica Geral Menor GNU para maiores detalhes.
  *  
- *  Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU junto com este programa, se não, escreva para a Fundação do Software
+ *  Voce deve ter recebido uma copia da Licenca Publica Geral Menor GNU junto com este programa, se nao, escreva para a Fundacao do Software
  *  Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * 
  */
@@ -28,7 +28,7 @@ public class Cartas {
     private String naipeCarta;
 
     /**
-     * Define os atributos da carta simultaneamente: número e naipe
+     * Define os atributos da carta simultaneamente: numero e naipe
      * @param numero - inteiro referente ao numero da carta
      * @param naipe - string referente ao naipe da carta
      */    
@@ -38,15 +38,15 @@ public class Cartas {
     }
     
     /**
-     * Obtém o número de uma carta
-     * @return - inteiro referente ao número da carta
+     * Obtem o numero de uma carta
+     * @return - inteiro referente ao numero da carta
      */
     public int getNumCarta() {
         return numCarta;
     }
 
     /**
-     * Obtém o naipe de uma carta
+     * Obtem o naipe de uma carta
      * @return - string referente ao naipe da carta
      */
     public String getNaipeCarta() {
@@ -54,8 +54,8 @@ public class Cartas {
     }
 
     /**
-     * Determina o número de uma carta
-     * @param numeroCarta - inteiro referente ao número da carta
+     * Determina o numero de uma carta
+     * @param numeroCarta - inteiro referente ao numero da carta
      */
     public void setNumCarta(int numeroCarta) {
         this.numCarta = numeroCarta;
@@ -71,7 +71,7 @@ public class Cartas {
     }
     
     /**
-     * Método que retorna uma string referente ao número e naipe da carta
+     * Metodo que retorna uma string referente ao numero e naipe da carta
      * @return
      */
     public String imprimecarta() {

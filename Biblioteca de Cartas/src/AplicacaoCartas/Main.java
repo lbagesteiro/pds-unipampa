@@ -1,15 +1,15 @@
 /**
- *  Copyright (c) 2012 Luiza Bagesteiro e Ricardo Pasqualotti
+ * Copyright (c) 2012 Luiza Bagesteiro e Ricardo Pasqualotti
  * 
- *  Este arquivo é parte do programa AplicacaoCartas
+ * Este arquivo e parte do programa AplicacaoCartas
  * 
- *  AplicacaoCartas é um software livre; você pode redistribui-lo e/ou modifica-lo dentro dos termos da Licença Pública Geral Menor GNU 
- *  como publicada pela Fundação do Software Livre (FSF); na versão 2 da Licença, ou (na sua opnião) qualquer versão.
+ * AplicacaoCartas e um software livre; voce pode redistribui-lo e/ou modifica-lo dentro dos termos da Licenca Publica Geral Menor GNU 
+ * como publicada pela Fundacao do Software Livre (FSF); na versao 2 da Licenca, ou (na sua opiniao) qualquer versao.
  * 
- *  Este programa é distribuido na esperança que possa ser  util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- *  MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral Menor GNU para maiores detalhes.
+ *  Este programa e distribuido na esperanca que possa ser util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUACAO a qualquer
+ *  MERCADO ou APLICACAO EM PARTICULAR. Veja a Licenca Publica Geral Menor GNU para maiores detalhes.
  *  
- *  Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU junto com este programa, se não, escreva para a Fundação do Software
+ *  Voce deve ter recebido uma copia da Licenca Publica Geral Menor GNU junto com este programa, se nao, escreva para a Fundacao do Software
  *  Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * 
  */
@@ -19,8 +19,8 @@ import java.util.Scanner;
 import AplicacaoCartas.Baralho;
 
 /**
- *Classe que representa a manipulação das cartas pelo jogador
- *Funções possíveis: mostrar baralho, embaralhar, cortar em duas partes, retirar uma carta do inicio ou do final,
+ *Classe que representa a manipulacao das cartas pelo jogador
+ *Funcoes possiveis: mostrar baralho, embaralhar, cortar em duas partes, retirar uma carta do inicio ou do final,
  *passar uma carta do inicio para o final, adicionar carta ao monte de descarte.
  *@author Luiza Bagesteiro
  *@author Ricardo Pasqualotti
@@ -34,20 +34,20 @@ public class Main {
     static int localdocorte = 0;
     
     /**
-     * Método de escolha das funções pelo jogador
+     * Metodo de escolha das funcoes pelo jogador
      */
     public static void ManipulaCartas(){  
     	
     	Scanner is = new Scanner(System.in);
     	
-        System.out.println("\n\n" + "Digite o que você quer fazer: ");
+        System.out.println("\n\n" + "Digite o que voce quer fazer: ");
         System.out.println("1 - Mostrar baralho");
         System.out.println("2 - Embaralhar");
-        System.out.println("3 - Cortar o baralho no local que você define");
-        System.out.println("4 - Mover uma carta do início para o final do baralho, sem mostrar a carta");
+        System.out.println("3 - Cortar o baralho no local que voce define");
+        System.out.println("4 - Mover uma carta do inicio para o final do baralho, sem mostrar a carta");
         System.out.println("5 - Retirar a primeira carta do baralho");
-        System.out.println("6 - Retirar a última carta do baralho");
-        System.out.println("7 - Descartar do baralho uma carta que você define");
+        System.out.println("6 - Retirar a ultima carta do baralho");
+        System.out.println("7 - Descartar do baralho uma carta que voce define");
         System.out.println("8 - Mostrar as cartas descartadas" + "\n\n");
         
         option = is.nextInt();
@@ -63,7 +63,7 @@ public class Main {
         }
     
         else if (option==3){    
-        	System.out.println("Posição do corte: ");
+        	System.out.println("Posicao do corte: ");
         	localdocorte = is.nextInt();
         	baralho.cortaEmDois(localdocorte); 
         	ManipulaCartas();   
@@ -76,21 +76,21 @@ public class Main {
     
         else if (option==5){
         	card = baralho.retiraCartaInicio();
-            System.out.println("Você retirou a carta: " + card.imprimecarta());
+            System.out.println("Voce retirou a carta: " + card.imprimecarta());
         	ManipulaCartas();   
         }
        
         else if(option==6){
         	card = baralho.retiraCartaFim();
-        	System.out.println("Você retirou a carta: " + card.imprimecarta());
+        	System.out.println("Voce retirou a carta: " + card.imprimecarta());
         	ManipulaCartas();   
         }
     
         else if(option==7){      
         	System.out.println("Descartando carta...");
-        	System.out.println("Digite o número da carta: ");
+        	System.out.println("Digite o numero da carta: ");
             int numero = is.nextInt();
-        	System.out.println("Digite o número correspondente ao naipe: (1 = Copas; 2 = Espadas; 3 = Ouros; 4 = Paus) ");
+        	System.out.println("Digite o numero correspondente ao naipe: (1 = Copas; 2 = Espadas; 3 = Ouros; 4 = Paus) ");
         	int n = is.nextInt();
         	
         	if (n==1){
@@ -106,7 +106,7 @@ public class Main {
         		baralho.Descarta(numero, "Paus");
         	}
         	else{
-        		System.err.println("Erro: você digitou um naipe inválido!");
+        		System.err.println("Erro: voce digitou um naipe invalido!");
             	ManipulaCartas();
         	}        	
             
@@ -119,7 +119,7 @@ public class Main {
         }
     
         else{
-        	System.err.println("Erro: você digitou um número inválido!");
+        	System.err.println("Erro: voce digitou um numero invalido!");
         	ManipulaCartas();   
         }	 
    
@@ -127,7 +127,7 @@ public class Main {
     
     
     /**
-     * chama o método para manipular as cartas
+     * chama o metodo para manipular as cartas
      */
     public static void main(String[] args) {
     	ManipulaCartas();        

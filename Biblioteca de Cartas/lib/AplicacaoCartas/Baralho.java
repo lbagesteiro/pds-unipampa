@@ -1,15 +1,15 @@
 /**
  * Copyright (c) 2012 Luiza Bagesteiro e Ricardo Pasqualotti
  * 
- * Este arquivo é parte do programa AplicacaoCartas
+ * Este arquivo e parte do programa AplicacaoCartas
  * 
- * AplicacaoCartas é um software livre; você pode redistribui-lo e/ou modifica-lo dentro dos termos da Licença Pública Geral Menor GNU 
- * como publicada pela Fundação do Software Livre (FSF); na versão 2 da Licença, ou (na sua opnião) qualquer versão.
+ * AplicacaoCartas e um software livre; voce pode redistribui-lo e/ou modifica-lo dentro dos termos da Licenca Publica Geral Menor GNU 
+ * como publicada pela Fundacao do Software Livre (FSF); na versao 2 da Licenca, ou (na sua opiniao) qualquer versao.
  * 
- *  Este programa é distribuido na esperança que possa ser  util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
- *  MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral Menor GNU para maiores detalhes.
+ *  Este programa e distribuido na esperanca que possa ser util, mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUACAO a qualquer
+ *  MERCADO ou APLICACAO EM PARTICULAR. Veja a Licenca Publica Geral Menor GNU para maiores detalhes.
  *  
- *  Você deve ter recebido uma cópia da Licença Pública Geral Menor GNU junto com este programa, se não, escreva para a Fundação do Software
+ *  Voce deve ter recebido uma copia da Licenca Publica Geral Menor GNU junto com este programa, se nao, escreva para a Fundacao do Software
  *  Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * 
  */
@@ -23,7 +23,7 @@ import AplicacaoCartas.Cartas;
 /**
  * Classe que implementa funcionalidades como:
  * embaralhar, cortar em duas partes, retirar uma carta do inicio ou do final,
- * passar uma carta do inicio para o final, além da criação do monte de descarte.
+ * passar uma carta do inicio para o final, alem da criacao do monte de descarte.
  * @author Luiza Bagesteiro
  * @author Ricardo Pasqualotti
  */
@@ -33,7 +33,7 @@ public class Baralho {
 		public ArrayList<Cartas> descartadas = new ArrayList<Cartas>();
 		
 		/**
-		 * Método construtor da classe Baralho,onde o baralho é instanciado e preenchido
+		 * Metodo construtor da classe Baralho,onde o baralho e instanciado e preenchido
 		 */
 		public Baralho(){
 			
@@ -57,7 +57,7 @@ public class Baralho {
 		
 		
 		/**
-		 * Método que imprime todas as 52 cartas do baralho
+		 * Metodo que imprime todas as 52 cartas do baralho
 		 */
 		public void imprimeBaralho() {
 			for (int count=0; count<baralho.size(); count++){
@@ -67,7 +67,7 @@ public class Baralho {
 		
 		
 		/**
-	     * Método que embaralha o baralho
+	     * Metodo que embaralha o baralho
 	     */
 	    public void embaralhaBaralho(){
 	        Collections.shuffle(baralho);
@@ -76,13 +76,13 @@ public class Baralho {
 	    
 	    
 	    /**
-	     * Método que corta o baralho na posição definida pelo usuário,
+	     * Metodo que corta o baralho na posicao definida pelo usuario,
 	     * onde a parte de cima do baralho passa a ser a parte de baixo, e vice-versa
 	     * @param posicao
 	     */
 		public void cortaEmDois(int posicao) {
 	        if(baralho.size()<posicao){
-	            System.err.println("Você digitou um número maior que o número de cartas existente");
+	            System.err.println("Voce digitou um numero maior que o numero de cartas existente");
 	        }
 	        else{
 	            ArrayList<Cartas> temporario = new ArrayList<Cartas>();	        
@@ -97,7 +97,7 @@ public class Baralho {
 		
 		
 		/**
-		 * Método que move a primera carta do baralho para o fim do baralho
+		 * Metodo que move a primera carta do baralho para o fim do baralho
 		 */
 		public void moveCartaParaOFim(){
 				baralho.add(baralho.remove(0));
@@ -106,7 +106,7 @@ public class Baralho {
 		
 		
 		/**
-		 * Método que retira a primeira carta do baralho
+		 * Metodo que retira a primeira carta do baralho
 		 * @return
 		 */
 		 public Cartas retiraCartaInicio(){
@@ -115,7 +115,7 @@ public class Baralho {
 		 
 		 
 		 /**
-		  * Método que retira a última carta do baralho
+		  * Metodo que retira a ultima carta do baralho
 		  * @return
 		  */
 		  public Cartas retiraCartaFim(){
@@ -124,7 +124,7 @@ public class Baralho {
 		  
 		  
 		  /**
-		   * Método que descarta uma carta do baralho
+		   * Metodo que descarta uma carta do baralho
 		   * @param naipe - String
 		   * @param numero - inteiro
 		   */
@@ -140,7 +140,7 @@ public class Baralho {
 
   
 		  /**
-		   * Método para visualizar todas as cartas que estão no monte de descarte
+		   * Metodo para visualizar todas as cartas que estao no monte de descarte
 		   */
 		  public void verCartasDescartadas() {
 			  for(int i=0; i<descartadas.size(); i++)
